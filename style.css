@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+  --font-main: 'League Spartan', Arial, sans-serif;
+}
+
+body {
+  background: var(--light-grayish-magenta);
+  font-family: var(--font-main);
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.social-proof-section {
+  max-width: 1100px;
+  margin: 60px auto;
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(44, 21, 56, 0.08);
+  padding: 48px 40px 56px 40px;
+  position: relative;
+}
+
+.header h1 {
+  color: var(--very-dark-magenta);
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0 0 18px 0;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.header p {
+  color: var(--dark-grayish-magenta);
+  font-size: 1.1rem;
+  margin: 0 0 36px 0;
+  max-width: 420px;
+  font-weight: 500;
+}
+
+.ratings {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  position: absolute;
+  top: 56px;
+  right: 56px;
+}
+
+.rating {
+  background: var(--light-grayish-magenta);
+  border-radius: 10px;
+  padding: 12px 32px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-weight: 700;
+  color: var(--very-dark-magenta);
+  font-size: 1.05rem;
+  box-shadow: 0 2px 8px rgba(44, 21, 56, 0.03);
+}
+
+.stars {
+  color: #ffb545;
+  font-size: 1.1em;
+  letter-spacing: 2px;
+}
+
+.testimonials {
+  display: flex;
+  gap: 28px;
+  margin-top: 120px;
+}
+
+.testimonial {
+  background: var(--very-dark-magenta);
+  color: var(--white);
+  border-radius: 10px;
+  padding: 32px 28px 28px 28px;
+  flex: 1;
+  box-shadow: 0 2px 8px rgba(44, 21, 56, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--white);
+}
+
+.verified {
+  color: var(--soft-pink);
+  font-size: 0.95em;
+  font-weight: 400;
+}
+
+.testimonial p {
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.5;
+  font-weight: 500;
+  opacity: 0.95;
+}
+
+@media (max-width: 900px) {
+  .social-proof-section {
+    padding: 32px 12px 40px 12px;
+  }
+  .ratings {
+    position: static;
+    margin-bottom: 32px;
+  }
+  .testimonials {
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 40px;
+  }
+}
